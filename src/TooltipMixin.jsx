@@ -82,12 +82,12 @@ let TooltipMixin = {
 			return;
 		}
 
-		this.setState({
-			tooltip: {
-				hidden: true,
-				fixed: true
-			}
-		});
+		// this.setState({
+		// 	tooltip: {
+		// 		hidden: true,
+		// 		fixed: true
+		// 	}
+		// });
 	}
 };
 
