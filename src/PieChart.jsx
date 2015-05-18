@@ -194,6 +194,7 @@ let PieChart = React.createClass({
 			 sort,
 			 x,
 			 y,
+			 fill,
 			 values} = this.props;
 
 		let [innerWidth,
@@ -244,7 +245,6 @@ let PieChart = React.createClass({
 
 		let style = { position: "relative" };
 
-
 		return (
 			<div style={style}>
 				<Chart height={height} width={width} margin={margin}>
@@ -267,6 +267,7 @@ let PieChart = React.createClass({
 							x={0}
 							y={(innerHeight/2) + textOffset.bottom }
 							textAnchor="middle"
+							fill={fill}
 						>
 							{data.label}
 						</text>
