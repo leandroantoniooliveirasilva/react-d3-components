@@ -235,7 +235,7 @@ let PieChart = React.createClass({
 
 		let translation = `translate(${innerWidth/2}, ${innerHeight/2})`;
 
-		let textOffset = (radius * 0.8) + (radius * 0.4);
+		let textOffset = (radius * 0.8) + (radius * 0.4) - 10;
 
 		let style = { position: "relative" };
 
