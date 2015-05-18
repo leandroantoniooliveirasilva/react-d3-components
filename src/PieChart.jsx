@@ -234,6 +234,13 @@ let PieChart = React.createClass({
 
 		let translation = `translate(${innerWidth/2}, ${innerHeight/2})`;
 
+		let textOffset = {
+			top : 0,
+			left: 0,
+			right: 0,
+			bottom: - 10
+		}
+
 		let style = { position: "relative" };
 		return (
 			<div style={style}>
@@ -255,7 +262,7 @@ let PieChart = React.createClass({
 						</DataSet>
 						<text
 							x={0}
-							y={innerHeight/2}
+							y={(innerHeight/2) + textOffset.bottom }
 							textAnchor="middle"
 						>
 							{data.label}

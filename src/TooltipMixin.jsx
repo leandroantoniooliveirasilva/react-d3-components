@@ -67,7 +67,7 @@ let TooltipMixin = {
 
 		this.setState({
 			tooltip: {
-				top: top + 10,
+				top: top ,
 				left: left,
 				hidden: false,
 				fixed: true,
