@@ -235,13 +235,16 @@ let PieChart = React.createClass({
 		let translation = `translate(${innerWidth/2}, ${innerHeight/2})`;
 
 		let textOffset = {
-			top : 0,
+
 			left: 0,
+			top: 0,
 			right: 0,
-			bottom: - 10
-		}
+			bottom: -10
+		};
 
 		let style = { position: "relative" };
+
+
 		return (
 			<div style={style}>
 				<Chart height={height} width={width} margin={margin}>
