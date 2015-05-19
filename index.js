@@ -1,4 +1,4 @@
 
 'use strict'
 
-module.exports = require('./dist/react-d3-components.js');
+module.exports = require('./src/index.jsx');
