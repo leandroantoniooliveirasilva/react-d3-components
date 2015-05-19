@@ -22,8 +22,10 @@
   },
   "homepage": "https://github.com/codesuki/react-d3-components",
   "dependencies": {
-	"d3": "^3.5.3",
-	"react": "^0.13.1"
+	 "d3": "^3.5.3"
+  },
+  "peerDependencies" :{
+    "react": "^0.13.1"
   },
   "devDependencies": {
 	"babel": "^4.6.4",
