@@ -68,8 +68,6 @@ let DataSet = React.createClass({
 			 opacity,
 			 x,
 			 y,
-			 onMouseEnter,
-			 onMouseLeave,
 			 width,
 			 height} = this.props;
 
@@ -139,10 +137,7 @@ let DataSet = React.createClass({
 		});
 	
 		return (
-			<g id="mouse" 
-				onMouseEnter={ evt => { onMouseEnter(evt, globalData, gsize); } } 
-				onMouseLeave={ evt => { onMouseLeave(evt); } } 
-			>	
+			<g>	
 				{wedges}
 			</g>
 			
@@ -253,8 +248,6 @@ let PieChart = React.createClass({
 							radius={radius}
 							x={x}
 							y={y}
-							onMouseEnter={this.onMouseEnter}
-							onMouseLeave={this.onMouseLeave}
 							>
 						</DataSet>
 						<text
