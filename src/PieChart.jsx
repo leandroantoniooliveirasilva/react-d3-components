@@ -94,7 +94,7 @@ let DataSet = React.createClass({
 			let linePos = outerArc.centroid(e);
 			linePos[0] = radius * 0.95 * (midAngle(e) < Math.PI ? 1 : -1);
 
-			let _polyline = {};
+			let _polyline = null;
 
 			if ( false ) {
 				_polyline = (
@@ -109,7 +109,7 @@ let DataSet = React.createClass({
 				)
 			} 
 
-			let _text = {};
+			let _text = null;
 			if ( false ) {
 				_text = (
 					<text
